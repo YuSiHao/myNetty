@@ -1,6 +1,6 @@
 package com.ysh.netty.server;
 
-import com.ysh.netty.handler.DiscardServerHandler;
+import com.ysh.netty.server.handler.DiscardServerHandler;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

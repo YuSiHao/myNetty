@@ -1,7 +1,7 @@
 package com.ysh.netty.server;
 
 
-import com.ysh.netty.handler.EchoServerHandler;
+import com.ysh.netty.server.handler.EchoServerHandler;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

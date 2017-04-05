@@ -2,8 +2,8 @@ package com.ysh.netty.server;
 
 
 
-import com.ysh.netty.handler.HttpRequestHandler;
-import com.ysh.netty.handler.TextWebSocketFrameHandler;
+import com.ysh.netty.server.handler.HttpRequestHandler;
+import com.ysh.netty.server.handler.TextWebSocketFrameHandler;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

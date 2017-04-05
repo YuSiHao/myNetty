@@ -5,4 +5,4 @@
  * @author cyu088
  *
  */
-package com.ysh.netty.model;
+package com.ysh.netty.client.handler;

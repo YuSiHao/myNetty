@@ -1,4 +1,4 @@
-package com.ysh.netty.handler;
+package com.ysh.netty.server.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
