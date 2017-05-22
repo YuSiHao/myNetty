@@ -12,8 +12,6 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 /**
  * 简单聊天服务器-服务端
  * 
- * @author waylau.com
- * @date 2015-2-16
  */
 public class SimpleChatServer {
 
@@ -25,8 +23,8 @@ public class SimpleChatServer {
 
     public void run() throws Exception {
         
-        EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1)
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
+        EventLoopGroup bossGroup = new NioEventLoopGroup(); // (1) Boss Group用于服务端处理建立连接的请求
+        EventLoopGroup workerGroup = new NioEventLoopGroup(); // 用于处理I/O EventLoopGroup的默认大小都是是2倍的CPU核数，但这并不是一个恒定的最佳数量，为了避免线程上下文切换，只要能满足要求，这个值其实越少越好。
         try {
             ServerBootstrap b = new ServerBootstrap(); // (2)
             b.group(bossGroup, workerGroup)

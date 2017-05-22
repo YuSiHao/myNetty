@@ -61,6 +61,7 @@ public class SimpleChatServerHandler extends SimpleChannelInboundHandler<String>
         Channel incoming = ctx.channel();
 		System.out.println("SimpleChatClient:"+incoming.remoteAddress()+"掉线");
 	}
+	
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) { 
     	Channel incoming = ctx.channel();
